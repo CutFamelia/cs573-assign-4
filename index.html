@@ -17,7 +17,7 @@
         p {
             width: 80%;
             margin: auto;
-            font: 25px/1.5 Helvetica, sans-serif;
+            font: 15px/1.5 Helvetica, sans-serif;
         }
 
         #agree_button{height:20px; position:relative; margin: -20px -50px; width:100px; top:50%; left:50%;}
@@ -79,20 +79,32 @@
 
     </script>
 </head>
+    <style>
+        p.small {
+        line-height: 20px;
+        }
+    </style>
 <body>
 <div id="agree">
-    <p>
-        Do you want to see how well your accuracy in reading charts?.
+    <center>
+    <h2 class = "small">
+        Do you want to see how well your accuracy in reading charts?
+    </h2>
+    </center><p class = "small">
+    
+    <p class = "small">
+        You can do that by answering 10 questions regarding the percentage of every smaller value to a larger value on three different charts.
     </p>
-    <p>
-        You can do that by answering 10 questions regarding the percentage of every smaller value to a larger value based on different charts shown.
-    </p>
-    <p>
+    
+   <p class = "small">
         If you agree to do so, your answers will be recorded so that at the end you will be able to see how close your answers to the actual percentages.
     </p>
 
+    <div style="text-align: center; position:relative; width: 100%; border-width: 1px 0 0 0; ">
     <button id="agree_button"type="button">Agree</button>
-    <button id="disagree_button" type="button">Disagree</button>
+    <button id="disagree_button" type="button">Disagree</button>      
+</div>
+
 </div>
 </body>
 </html>
